@@ -9,8 +9,8 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
     
-    RewriteRule ^/?$ http://%{SERVER_NAME}/ [R=301]
-    RewriteRule ^inner/directory/?$ http://%{SERVER_NAME}/inner/directory/ [R=301,L]
+    # RewriteRule ^/?$ http://%{SERVER_NAME}/ [R=301]
+    # RewriteRule ^inner/directory/?$ http://%{SERVER_NAME}/inner/directory/ [R=301,L]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -24,4 +24,8 @@
 
 
 
+</IfModule>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>

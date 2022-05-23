@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('/login/facebook', [SocialController::class, 'login']);
  
 Route::get('/callback/facebook', [SocialController::class, 'callback']);
+

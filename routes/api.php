@@ -32,3 +32,5 @@ Route::middleware('auth:api')->group(function() {
 
 Route::post('/user/register', [UserController::class, 'register']);
 Route::post('/user/login', [UserController::class, 'login']);
+
+

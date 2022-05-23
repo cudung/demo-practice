@@ -178,4 +178,5 @@ function checkLoginState() {
     statusChangeCallback(response);
   });
 }
+
 </script>

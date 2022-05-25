@@ -18,7 +18,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
 
 Route::get('/login/facebook', [SocialController::class, 'login']);

@@ -9,7 +9,7 @@
     <script src="{{asset('public/js/app.js')}}"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container col-md-4">
         <form action="/api/login" method="POST">
             <h1>Đăng nhập</h1>
             <div class="row">

@@ -8,6 +8,7 @@
 </p>
 
 ## Practice Laravel, PHP 
+- Deploy http://laravel.vnpttel.com/
 - Extensions
     + Data Seeder
     + Laravel Passport

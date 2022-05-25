@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\SocialController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,8 @@ Route::get('/', function () {
 Route::get('/login/facebook', [SocialController::class, 'login']);
  
 Route::get('/callback/facebook', [SocialController::class, 'callback']);
+
+Route::get('/login', function() {
+    return view('login');
+});
 

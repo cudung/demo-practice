@@ -128,55 +128,10 @@
                 </div>
             </div>
         </div>
-        <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=621349555237491&autoLogAppEvents=1" nonce="wVZzmTUZ"></script>
-<!-- <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
-
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>   
+    
 
 
-<hr>
-<div class="form-group row mb-0">
- <div class="col-md-8 offset-md-4">
-    <a href="{{ url('/auth/redirect/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebooksssssss</a>
-</div>
-</div>
+
 </body>
 </html>
 
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '621349555237491',
-      cookie     : true,
-      xfbml      : true,
-      version    : '{api-version}'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-
-
-FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
-
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-
-</script>

@@ -24,12 +24,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::middleware('auth:api')->group(function() {
-    Route::delete('/product/dela', [ProductController::class, 'del']);
+    Route::delete('/product/delsss', [ProductController::class, 'del']);
     Route::post('/product/add', [ProductController::class, 'add']);
     Route::patch('/product/update/{id}', [ProductController::class, 'update']);
     Route::get('/cart/add', [CartController::class, 'addCart']);
 });
-Route::get('/product', [ProductController::class, 'show']);
+Route::get('/products', [ProductController::class, 'show']);
 
 Route::post('/user/register', [UserController::class, 'register']);
 Route::post('/user/login', [UserController::class, 'login']);

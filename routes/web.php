@@ -29,3 +29,6 @@ Route::get('/login', function() {
     return view('login');
 });
 
+Route::get('/category', function(){
+    return 'category';
+});
